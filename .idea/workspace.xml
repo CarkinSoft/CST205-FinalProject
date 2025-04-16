@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":art: Added a blank gui to get everyone started." />
+    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":art: Added a blank gui to get everyone started.">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,12 +33,12 @@
     &quot;assignee&quot;: &quot;CarkinSoft&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/CarkinSoft/CST205-FinalProject&quot;,
-    &quot;accountId&quot;: &quot;255c6fc2-3129-46e9-8922-d6d460fd198f&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CarkinSoft/CST205-FinalProject.git",
+    "accountId": "255c6fc2-3129-46e9-8922-d6d460fd198f"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -51,7 +53,7 @@
     "Python.DefaultPysideGUI.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "CarsonDevBranch-Mk.I",
     "last_opened_file_path": "/Users/carson/PycharmProjects/CST205-FinalProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,6 +83,7 @@
       <workItem from="1744233989574" duration="1974000" />
       <workItem from="1744674735086" duration="645000" />
       <workItem from="1744676936945" duration="2025000" />
+      <workItem from="1744839100912" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary=":technologist: initial code commit">
       <option name="closed" value="true" />
@@ -126,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":technologist: initial code commit" />
     <MESSAGE value=":art: just adding something because the project is empty" />
+    <MESSAGE value="Update README.md" />
     <MESSAGE value=":art: Added a blank gui to get everyone started." />
     <option name="LAST_COMMIT_MESSAGE" value=":art: Added a blank gui to get everyone started." />
   </component>
