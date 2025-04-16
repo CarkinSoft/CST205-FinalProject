@@ -1,4 +1,4 @@
 # CST205-FinalProject
-Final Project Group: (Group Name/Number here) 
+Final Project Group: 8245 
 
-Members: Carson Cardoza, (Other group members here)
+Members: Carson Cardoza, Shea Gallagher, (Other group members here)
