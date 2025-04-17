@@ -23,7 +23,7 @@ def shazam(filepath):
         
         title = track.get('title', 'No title available...')
         artist = track.get('subtitle', 'No artist available...')
-        album = track.get('album', 'No album available...')  # Might not always be available
+        album = track.get('album', 'No album available...')
         cover_art = track.get('images', {}).get('coverart', 'No picture available')
         info_url = track.get('share', {}).get('href', 'No link available')
         
