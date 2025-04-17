@@ -29,10 +29,10 @@ def shazam(filepath):
         
         print("Song information: ")
         print(cover_art)
-        print(title)
-        print(artist)
-        print(album)
-        print(info_url)
+        print("Song: " + title)
+        print("By " + artist)
+        print("Album: " + album)
+        print("Further info: " + info_url)
     else:
         print("Error")
 
