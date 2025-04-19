@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -90,7 +91,7 @@ def load_audio(file_path):
     return y, sr, duration
 
 def main():
-    audio_file = 'C:/Users/sheag/CSUMB/S25/205/test/audio/phub_and.mp3'
+    audio_file = 'TestAudioFiles/phub_and.mp3'
     y, sr, duration = load_audio(audio_file)
 
     # Some file info
@@ -100,6 +101,7 @@ def main():
     print(f"Duration: {duration:.2f} s")
 
     # Call functions here
+    dis_mfccs(y, sr)
 
 
 if __name__ == '__main__':
