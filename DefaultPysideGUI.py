@@ -33,7 +33,7 @@ class MyWindow(QWidget):
       naviButtn1 = QPushButton("Home")
       naviButtn1.setFixedHeight(50)
       naviButtn1.setFixedWidth(100)
-      naviButtn1.clicked.connect(self.naviButtn1_clicked)
+      #naviButtn1.clicked.connect(self.naviButtn1_clicked)
 
       naviButtn2 = QPushButton("Tool1")
       naviButtn2.setFixedHeight(50)
