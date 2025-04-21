@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":sparkles: Added two sample programs for experimenting with sound">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi_note_wave.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoundProgramExamples/multi_note_wave.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound.py" beforeDir="false" afterPath="$PROJECT_DIR$/SoundProgramExamples/sound.py" afterDir="false" />
-    </list>
+    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":sparkles: added some sample audio programs from class to a folder in the project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744841858171</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":sparkles: added some sample audio programs from class to a folder in the project">
+      <option name="closed" value="true" />
+      <created>1744844250610</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744844250610</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +199,7 @@
     <MESSAGE value=":art: Added a blank gui to get everyone started." />
     <MESSAGE value=":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well" />
     <MESSAGE value=":sparkles: Added two sample programs for experimenting with sound" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: Added two sample programs for experimenting with sound" />
+    <MESSAGE value=":sparkles: added some sample audio programs from class to a folder in the project" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: added some sample audio programs from class to a folder in the project" />
   </component>
 </project>
