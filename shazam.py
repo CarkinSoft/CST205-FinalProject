@@ -27,14 +27,11 @@ def shazam(filepath):
         cover_art = track.get('images', {}).get('coverart', 'No picture available')
         info_url = track.get('share', {}).get('href', 'No link available')
         
-        print("Song information: ")
-        print(cover_art)
-        print("Song: " + title)
-        print("By " + artist)
-        print("Album: " + album)
-        print("Further info: " + info_url)
+        # print("Song information: ")
+        # print(cover_art)
+        # print("Song: " + title)
+        # print("By " + artist)
+        # print("Album: " + album)
+        # print("Further info: " + info_url)
     else:
         print("Error")
-
-# add your audio files into the audio_files directory and then change the file path
-shazam("audio_files/monster.mp3")
