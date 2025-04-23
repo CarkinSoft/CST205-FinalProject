@@ -5,6 +5,7 @@ from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel,
 							   QLineEdit, QComboBox, QPushButton)
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
+from PIL import Image, ImageQt
 from __feature__ import snake_case, true_property
 
 # Set up app
@@ -20,6 +21,7 @@ class GraphWindow(QWidget):
 		self.title = QLabel("Audio Graphs")
 
 		# File input
+		# File needs to be in the "/TestAudioFiles/" folder
 		self.filename = QLineEdit("Enter file name with extension (.mp3, .wav)")
 		main_layout.add_widget(self.filename)
 
@@ -55,7 +57,7 @@ class GraphWindow(QWidget):
 		self.set_layout(main_layout)
 		self.show()
 
-  	# when a graph is selected from the combo box, give a description of what its displaying
+  	# When a graph is selected from the combo box, give a description of the graph
 	def update_desc(self, graph_type):
 		if graph_type in self.graph_desc:
 			graph_desc = self.graph_desc[graph_type]
@@ -63,7 +65,7 @@ class GraphWindow(QWidget):
 		else:
 			self.desc_label.text = f"Description:"
 
-	# generates graph	
+	# Generate graph	
 	def make_graph(self):
 		filename = self.filename.text
 		graph_type = self.cbox.current_text
@@ -74,16 +76,18 @@ class GraphWindow(QWidget):
 			return
 		
 		# Generate graph using graphs.py
-		# TODO Graph img is created but not displayed
 		try:
-			output_img = graphs.make_graph(file_path, graph_type)
-			# Create Qt image
-			graph_pixmap = QPixmap(output_img)
-			self.graph_image.set_pixmap(graph_pixmap)
+			# Call graphing function
+			graphs.make_graph(file_path, graph_type)
+			# Display graph image as pixmap
+			graph_pixmap = QPixmap("OutputGraphs/graph.png")
+			self.graph_image.pixmap = graph_pixmap
+
 		except Exception as e:
+			print("Exception while loading image:", e)
 			self.desc_label.text = f"Error generating graph"
     
-
+	
 my_win = GraphWindow()
 
 sys.exit(my_app.exec())

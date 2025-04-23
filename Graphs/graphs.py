@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import librosa
 import librosa.display
 
-# plot settings
+# Plot settings
 plt.rcParams['text.color'] = '#FFFFFF'
 plt.rcParams['axes.labelcolor'] = '#FFFFFF'
 plt.rcParams['xtick.color'] = '#FFFFFF'
@@ -15,6 +15,8 @@ def dis_mfccs(y, sr, save_path):
     # Extract MFCCs
     mfccs = librosa.feature.mfcc(y=y, sr=sr)
     librosa.display.specshow(mfccs, x_axis='time', cmap='magma') # cmap to change color
+
+    # Title and labels
     plt.colorbar(format='%+2.0f dB')
     plt.title('MFCCs')
     plt.savefig(save_path, facecolor='#1F1B24')
@@ -25,11 +27,11 @@ def dis_spectrogram(y, sr, save_path):
     S = librosa.stft(y)
     S_db = librosa.amplitude_to_db(np.abs(S), ref=np.max)
 
-    # Display the spectrogram in the background 
+    # Display the spectrogram
     librosa.display.specshow(S_db, sr=sr, x_axis='time', y_axis='log', cmap='twilight', alpha=0.5)
 
     # Title and labels
-    plt.title('Spectrogram (Time-Frequency Energy)', fontsize=16, fontweight='bold')
+    plt.title('Spectrogram (Time-Frequency Energy)', fontsize=14, fontweight='bold')
     plt.colorbar(format='%+2.0f dB', label='Amplitude (dB)')
     plt.tight_layout()
     plt.savefig(save_path, facecolor='#1F1B24')
@@ -55,7 +57,6 @@ def dis_beatmarkers(y, sr, save_path):
 
 
 def dis_waveform(y, sr, save_path):
-    # Plot the waveform
     librosa.display.waveshow(y, sr=sr, color='cyan', alpha=0.8)
 
     # Title and labels
@@ -68,7 +69,6 @@ def dis_waveform(y, sr, save_path):
 
 
 def dis_mel(y, sr, save_path):
-    # plot mel filter
     # Create the Mel filter bank
     n_fft = 2048  # Number of FFT components
     n_mels = 20  # Number of Mel bands
@@ -78,6 +78,8 @@ def dis_mel(y, sr, save_path):
     melfb = librosa.filters.mel(sr=sr, n_fft=n_fft, n_mels=n_mels)
     # Plot mel filter
     img = librosa.display.specshow(melfb, x_axis='linear') # 'log'
+
+    # Title and labels
     plt.title('Mel Filter Bank')
     plt.xlabel('FFT Bin')
     plt.ylabel('Mel Filter Index')
@@ -94,11 +96,11 @@ def load_audio(file_path):
     duration = librosa.get_duration(y=y, sr=sr)
     return y, sr, duration
 
-# takes arguments from GUI-graphs.py and returns location of generated graph
+# Takes arguments from GUI-graphs.py then genertes and saves a graph image png
 def make_graph(file_path, graph_type, output_folder="OutputGraphs"):
     y, sr, duration = load_audio(file_path)
     # Create filename and path to store generated graph
-    output_path = os.path.join(output_folder, f"{graph_type}_graph.png")
+    output_path = os.path.join(output_folder, f"graph.png")
 
     # Call selected graph function
     if graph_type == "MFCC":
@@ -113,7 +115,6 @@ def make_graph(file_path, graph_type, output_folder="OutputGraphs"):
         dis_mel(y, sr, output_path)
     else:
         raise ValueError(f"Unsupported graph type: {graph_type}")
-    return output_path
         
 
 #### Keep commented when using with GUI-graphs.py, will throw RuntimeError: 
@@ -122,14 +123,14 @@ def make_graph(file_path, graph_type, output_folder="OutputGraphs"):
 #     audio_file = 'TestAudioFiles/phub_and.mp3'
 #     y, sr, duration = load_audio(audio_file)
 
-#     # Some file info
-#     print(f"File: {audio_file}")
-#     print(f"Sample rate: {sr} Hz")
-#     print(f"Total samples: {len(y)}")
-#     print(f"Duration: {duration:.2f} s")
+#     # # Some file info
+#     # print(f"File: {audio_file}")
+#     # print(f"Sample rate: {sr} Hz")
+#     # print(f"Total samples: {len(y)}")
+#     # print(f"Duration: {duration:.2f} s")
 
 #     # Call functions here
-#     dis_mfccs(y, sr)
+#     dis_mfccs(y, sr, audio_file)
 
 
 # if __name__ == '__main__':
