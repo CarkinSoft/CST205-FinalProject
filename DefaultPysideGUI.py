@@ -1,10 +1,25 @@
 import sys
-
 # import classes from PySide6.QtWidgets module
 from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox, QMainWindow, QStatusBar, QToolBar
 from PySide6.QtCore import Qt,Slot
 from PySide6.QtGui import QPixmap
 #from __feature__ import snake_case, true_property
+
+#Pulse Code Modulation (PCM) function
+import numpy as np
+
+#cd audio at 44,100 hz and 16 bits per sample
+SAMPLES_S = 44_100
+BITS_SAMPLE = 16
+
+def create_pcm(frequency):
+    ang_freq = 2*np.pi*frequency
+    x_vals = np.arange(SAMPLES_S)
+    #sine wave between -1 and 1, scaled by 32767 with .3 reduction
+    y_vals = 32767 * .3 * np.sin(ang_freq * x_vals / SAMPLES_S)
+    return np.int16(y_vals)
+
+
 
 # create a QApplication object
 my_app = QApplication([])
@@ -88,9 +103,9 @@ class MyWindow(QWidget):
   def naviButtn5_clicked(self):
       self.label1.setText("Tool4")
 
+def __main__():
+    # create a MyWindow object
+    my_win = MyWindow()
 
-# create a MyWindow object
-my_win = MyWindow()
-
-# enter the Qt main loop and start to execute the Qt code
-sys.exit(my_app.exec())
+    # enter the Qt main loop and start to execute the Qt code
+    sys.exit(my_app.exec())

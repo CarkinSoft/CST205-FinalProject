@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":sparkles: added some sample audio programs from class to a folder in the project" />
+    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":sparkles: added some sample audio programs from class to a folder in the project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DefaultPysideGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DefaultPysideGUI.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +36,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/CarkinSoft/CST205-FinalProject.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/CarkinSoft/CST205-FinalProject&quot;,
     &quot;accountId&quot;: &quot;255c6fc2-3129-46e9-8922-d6d460fd198f&quot;
   }
 }</component>
@@ -47,7 +50,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.DefaultPysideGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DefaultPysideGUI.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;CarsonDevBranch-Mk.I&quot;,
@@ -118,6 +121,8 @@
       <workItem from="1744840575991" duration="2041000" />
       <workItem from="1744842840078" duration="128000" />
       <workItem from="1744843358583" duration="9000" />
+      <workItem from="1745447133131" duration="509000" />
+      <workItem from="1745447982449" duration="1852000" />
     </task>
     <task id="LOCAL-00001" summary=":technologist: initial code commit">
       <option name="closed" value="true" />
@@ -201,5 +206,11 @@
     <MESSAGE value=":sparkles: Added two sample programs for experimenting with sound" />
     <MESSAGE value=":sparkles: added some sample audio programs from class to a folder in the project" />
     <option name="LAST_COMMIT_MESSAGE" value=":sparkles: added some sample audio programs from class to a folder in the project" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$multi_note_wave.coverage" NAME="multi_note_wave Coverage Results" MODIFIED="1745273178318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$sound.coverage" NAME="sound Coverage Results" MODIFIED="1745273181450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$Note.coverage" NAME="Note Coverage Results" MODIFIED="1745275577289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$DefaultPysideGUI.coverage" NAME="DefaultPysideGUI Coverage Results" MODIFIED="1745275737575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
