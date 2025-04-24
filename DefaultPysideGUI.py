@@ -24,9 +24,9 @@ def create_pcm(frequency):
 # create a QApplication object
 my_app = QApplication([])
 
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
+#class MainWindow(QMainWindow):
+    #def __init__(self):
+        #super().__init__()
 
 class MyWindow(QWidget):
   def __init__(self):
@@ -39,10 +39,10 @@ class MyWindow(QWidget):
       self.label1.setFixedHeight(100)
       self.label1.setFixedWidth(100)
 
-      label2 = QLabel("<h1>Welcome to the Multimedia Tool Suite<h1>")
-      label2.setAlignment(Qt.AlignCenter)
-      label2.setFixedHeight(100)
-      label2.setFixedWidth(100)
+      self.label2 = QLabel("<h1>Welcome to the Multimedia Tool Suite<h1>")
+      self.label2.setAlignment(Qt.AlignCenter)
+      self.label2.setFixedHeight(100)
+      self.label2.setFixedWidth(100)
 
       #Buttons
       naviButtn1 = QPushButton("Home")
@@ -71,8 +71,8 @@ class MyWindow(QWidget):
       #naviButtn5.clicked.connect(self.naviButtn5_clicked)
 
       #Main Menu Widgets
-      vbox.addWidget(label1)
-      vbox.addWidget(label2)
+      vbox.addWidget(self.label1)
+      vbox.addWidget(self.label2)
       self.setLayout(vbox)
       self.show()
 
@@ -106,6 +106,10 @@ class MyWindow(QWidget):
 def __main__():
     # create a MyWindow object
     my_win = MyWindow()
+    my_win.show()
 
     # enter the Qt main loop and start to execute the Qt code
     sys.exit(my_app.exec())
+
+if __name__ == "__main__":
+    __main__()
