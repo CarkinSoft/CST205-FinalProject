@@ -1,0 +1,128 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d1b0b848-4106-4cab-9c1f-3f9420dbdfdd\" name=\"Changes\" comment=\":bug: there was an issue with how i was calling main. Silly issue but its fixed now\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;CarkinSoft&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/CarkinSoft/CST205-FinalProject&quot;,\n    &quot;accountId&quot;: &quot;255c6fc2-3129-46e9-8922-d6d460fd198f&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2vVd528AMM6sekRqXnHP1karo8L\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Python.DefaultPysideGUI.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"CarsonDevBranch-Mk.I\",\n    \"last_opened_file_path\": \"/Users/carson/PycharmProjects/CST205-FinalProject\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"settings.sync\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/SoundProgramExamples\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"DefaultPysideGUI\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\n      <option name=\"ENV_FILES\" value=\"\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"SDK_NAME\" value=\"Python 3.13\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <module name=\"\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/DefaultPysideGUI.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444\" />\n        <option value=\"bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d1b0b848-4106-4cab-9c1f-3f9420dbdfdd\" name=\"Changes\" comment=\"\" />\n      <created>1744233988498</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1744233988498</updated>\n      <workItem from=\"1744233989574\" duration=\"1974000\" />\n      <workItem from=\"1744674735086\" duration=\"645000\" />\n      <workItem from=\"1744676936945\" duration=\"2025000\" />\n      <workItem from=\"1744839100912\" duration=\"1441000\" />\n      <workItem from=\"1744840575991\" duration=\"2041000\" />\n      <workItem from=\"1744842840078\" duration=\"128000\" />\n      <workItem from=\"1744843358583\" duration=\"9000\" />\n      <workItem from=\"1745447133131\" duration=\"509000\" />\n      <workItem from=\"1745447982449\" duration=\"1852000\" />\n      <workItem from=\"1745450358966\" duration=\"998000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\":technologist: initial code commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744234110955</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744234110955</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\":art: just adding something because the project is empty\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744234334532</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744234334532</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\":art: Added a blank gui to get everyone started.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744684282375</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744684282375</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744840303620</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744840303620</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744840309381</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744840309381</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\":sparkles: Added two sample programs for experimenting with sound\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744841858171</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744841858171</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\":sparkles: added some sample audio programs from class to a folder in the project\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1744844250610</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1744844250610</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\":technologist: initial code commit\" />\n    <MESSAGE value=\":art: just adding something because the project is empty\" />\n    <MESSAGE value=\"Update README.md\" />\n    <MESSAGE value=\":art: Added a blank gui to get everyone started.\" />\n    <MESSAGE value=\":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well\" />\n    <MESSAGE value=\":sparkles: Added two sample programs for experimenting with sound\" />\n    <MESSAGE value=\":sparkles: added some sample audio programs from class to a folder in the project\" />\n    <MESSAGE value=\":bug: there was an issue with how i was calling main. Silly issue but its fixed now\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\":bug: there was an issue with how i was calling main. Silly issue but its fixed now\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$multi_note_wave.coverage\" NAME=\"multi_note_wave Coverage Results\" MODIFIED=\"1745273178318\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/SoundProgramExamples\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$sound.coverage\" NAME=\"sound Coverage Results\" MODIFIED=\"1745273181450\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/SoundProgramExamples\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$Note.coverage\" NAME=\"Note Coverage Results\" MODIFIED=\"1745275577289\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$DefaultPysideGUI.coverage\" NAME=\"DefaultPysideGUI Coverage Results\" MODIFIED=\"1745275737575\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9ed7be9164cad4f6b091d5f0084fd4e5a19c2765)
++++ b/.idea/workspace.xml	(date 1745455504554)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":bug: there was an issue with how i was calling main. Silly issue but its fixed now" />
++    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":bug: updated my branch by merging main into it">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/DefaultPysideGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DefaultPysideGUI.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -45,22 +48,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.DefaultPysideGUI.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "CarsonDevBranch-Mk.I",
+-    "last_opened_file_path": "/Users/carson/PycharmProjects/CST205-FinalProject",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "settings.sync",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.DefaultPysideGUI.executor&quot;: &quot;ConcurrencyExecutor&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;CarsonDevBranch-Mk.I&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/Users/carson/PycharmProjects/CST205-FinalProject&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$" />
+@@ -121,6 +124,8 @@
+       <workItem from="1745447133131" duration="509000" />
+       <workItem from="1745447982449" duration="1852000" />
+       <workItem from="1745450358966" duration="998000" />
++      <workItem from="1745453844311" duration="1153000" />
++      <workItem from="1745455062544" duration="442000" />
+     </task>
+     <task id="LOCAL-00001" summary=":technologist: initial code commit">
+       <option name="closed" value="true" />
+@@ -178,7 +183,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1744844250610</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary=":bug: updated my branch by merging main into it">
++      <option name="closed" value="true" />
++      <created>1745453036445</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1745453036445</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -204,7 +217,8 @@
+     <MESSAGE value=":sparkles: Added two sample programs for experimenting with sound" />
+     <MESSAGE value=":sparkles: added some sample audio programs from class to a folder in the project" />
+     <MESSAGE value=":bug: there was an issue with how i was calling main. Silly issue but its fixed now" />
+-    <option name="LAST_COMMIT_MESSAGE" value=":bug: there was an issue with how i was calling main. Silly issue but its fixed now" />
++    <MESSAGE value=":bug: updated my branch by merging main into it" />
++    <option name="LAST_COMMIT_MESSAGE" value=":bug: updated my branch by merging main into it" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/CST205_FinalProject$multi_note_wave.coverage" NAME="multi_note_wave Coverage Results" MODIFIED="1745273178318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
+Index: DefaultPysideGUI.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import sys\n# import classes from PySide6.QtWidgets module\nfrom PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox, QMainWindow, QStatusBar, QToolBar\nfrom PySide6.QtCore import Qt,Slot\nfrom PySide6.QtGui import QPixmap\n#from __feature__ import snake_case, true_property\n\n#Pulse Code Modulation (PCM) function\nimport numpy as np\n\n#cd audio at 44,100 hz and 16 bits per sample\nSAMPLES_S = 44_100\nBITS_SAMPLE = 16\n\ndef create_pcm(frequency):\n    ang_freq = 2*np.pi*frequency\n    x_vals = np.arange(SAMPLES_S)\n    #sine wave between -1 and 1, scaled by 32767 with .3 reduction\n    y_vals = 32767 * .3 * np.sin(ang_freq * x_vals / SAMPLES_S)\n    return np.int16(y_vals)\n\n\n\n# create a QApplication object\nmy_app = QApplication([])\n\n#class MainWindow(QMainWindow):\n    #def __init__(self):\n        #super().__init__()\n\nclass MyWindow(QWidget):\n  def __init__(self):\n      super().__init__()\n      vbox = QVBoxLayout()\n\n      #Labels\n      self.label1 = QLabel(\"Main Menu\")\n      self.label1.setAlignment(Qt.AlignCenter)\n      self.label1.setFixedHeight(100)\n      self.label1.setFixedWidth(100)\n\n      self.label2 = QLabel(\"<h1>Welcome to the Multimedia Tool Suite<h1>\")\n      self.label2.setAlignment(Qt.AlignCenter)\n      self.label2.setFixedHeight(100)\n      self.label2.setFixedWidth(100)\n\n      #Buttons\n      naviButtn1 = QPushButton(\"Home\")\n      naviButtn1.setFixedHeight(50)\n      naviButtn1.setFixedWidth(100)\n      #naviButtn1.clicked.connect(self.naviButtn1_clicked)\n\n      naviButtn2 = QPushButton(\"Tool1\")\n      naviButtn2.setFixedHeight(50)\n      naviButtn2.setFixedWidth(100)\n      #naviButtn2.clicked.connect(self.naviButtn2_clicked)\n\n      naviButtn3 = QPushButton(\"Tool2\")\n      naviButtn3.setFixedHeight(50)\n      naviButtn3.setFixedWidth(100)\n      #naviButtn3.clicked.connect(self.naviButtn3_clicked)\n\n      naviButtn4 = QPushButton(\"Tool3\")\n      naviButtn4.setFixedHeight(50)\n      naviButtn4.setFixedWidth(100)\n      #naviButtn4.clicked.connect(self.naviButtn4_clicked)\n\n      naviButtn5 = QPushButton(\"Tool4\")\n      naviButtn5.setFixedHeight(50)\n      naviButtn5.setFixedWidth(100)\n      #naviButtn5.clicked.connect(self.naviButtn5_clicked)\n\n      #Main Menu Widgets\n      vbox.addWidget(self.label1)\n      vbox.addWidget(self.label2)\n      self.setLayout(vbox)\n      self.show()\n\n  def __str__(self):\n      return \"MyWindow\"\n\n  def __repr__(self):\n      return \"MyWindow\"\n\n  @Slot()\n  def naviButtn1_clicked(self):\n      self.label1.setText(\"Home\")\n      print(\"Home button clicked\")\n\n  @Slot()\n  def naviButtn2_clicked(self):\n      self.label1.setText(\"Tool1\")\n\n  @Slot()\n  def naviButtn3_clicked(self):\n      self.label1.setText(\"Tool2\")\n\n  @Slot()\n  def naviButtn4_clicked(self):\n      self.label1.setText(\"Tool3\")\n\n  @Slot()\n  def naviButtn5_clicked(self):\n      self.label1.setText(\"Tool4\")\n\ndef __main__():\n    # create a MyWindow object\n    my_win = MyWindow()\n    my_win.show()\n\n    # enter the Qt main loop and start to execute the Qt code\n    sys.exit(my_app.exec())\n\nif __name__ == \"__main__\":\n    __main__()\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/DefaultPysideGUI.py b/DefaultPysideGUI.py
+--- a/DefaultPysideGUI.py	(revision 9ed7be9164cad4f6b091d5f0084fd4e5a19c2765)
++++ b/DefaultPysideGUI.py	(date 1745455255023)
+@@ -6,8 +6,12 @@
+ #from __feature__ import snake_case, true_property
+ 
+ #Pulse Code Modulation (PCM) function
++from pydub import AudioSegment
++from pydub.playback import play
++
+ import numpy as np
+ 
++
+ #cd audio at 44,100 hz and 16 bits per sample
+ SAMPLES_S = 44_100
+ BITS_SAMPLE = 16
+@@ -19,8 +23,6 @@
+     y_vals = 32767 * .3 * np.sin(ang_freq * x_vals / SAMPLES_S)
+     return np.int16(y_vals)
+ 
+-
+-
+ # create a QApplication object
+ my_app = QApplication([])
+ 
