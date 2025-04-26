@@ -4,34 +4,42 @@ import json
 
 def shazam(filepath):
 
-    url = "https://shazam-api-free.p.rapidapi.com/shazam/recognize/"
-    headers = {
-        "x-rapidapi-host": "shazam-api-free.p.rapidapi.com",
-        "x-rapidapi-key": "d3c1ecdc01msh60fe3839e71f890p1b9447jsn1908d295c18c"
-    }
+    url = "https://api.audd.io/"
+    data = {
+        "api_token": "78fe81024da2a73ae9e15648e1fee64c",  
+        "return": "lyrics,apple_music,spotify",
+        }
 
     with open(filepath, "rb") as audio_file:
         files = {
-            "upload_file": audio_file
+            "file": audio_file
         }
 
-        response = requests.post(url, headers=headers, files=files)
+        response = requests.post(url, data=data, files=files)
 
     if response.status_code == 200:
         data = response.json()
-        track = data.get('track', {})
+        track = data.get('result', {})
+
+        if not track:
+            return {error: "No song Identified..."}
         
-        title = track.get('title', 'No title available...')
-        artist = track.get('subtitle', 'No artist available...')
-        album = track.get('album', 'No album available...')
-        cover_art = track.get('images', {}).get('coverart', 'No picture available')
-        info_url = track.get('share', {}).get('href', 'No link available')
-        
+        return {
+            "title" : track.get('title', 'No title available...'),
+            "artist" : track.get('artist', 'No artist available...'),
+            "album" : track.get('album', 'No album available...'),
+            "cover_art" : (track.get('spotify', {}).get('album', {}).get('images', [{}])[0].get('url', 'No picture available')),
+            "song_link" : track.get('spotify', {}).get('external_urls', {}).get('spotify', 'No Spotify link available')
+        }
+
+        # Testing code for songs
         # print("Song information: ")
         # print(cover_art)
-        # print("Song: " + title)
-        # print("By " + artist)
-        # print("Album: " + album)
-        # print("Further info: " + info_url)
-    else:
-        print("Error")
+        # print(f"Song: {title}")
+        # print(f"By {artist}")
+        # print(f"Album: {album}")
+        # print(f"Song link: {song_link}")
+    # else:
+    #     print("Error")
+
+# shazam('audio_files/monster.mp3')
