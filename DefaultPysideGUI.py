@@ -14,7 +14,9 @@ my_app = QApplication([])
 class ShazamGUI(QWidget):
   def __init__(self):
       super().__init__()
-      self.setWindowTitle("Kaboom Song Lookup")
+      self.setWindowTitle("Kaboom Song Lookup") # window title
+
+      # this is what determines the color, size and look of the window
       self.setStyleSheet("""
         QWidget{
             background-color: #1a1a1a;
@@ -34,26 +36,42 @@ class ShazamGUI(QWidget):
         }
         QLabel {
             color: white;
+            font: 14px;
+            font-family: 'Avenir, sans-serif;
         }
     """)
 
       vbox = QVBoxLayout()
+
+      # setting margins for space but it seems to not work
       vbox.setSpacing(5)
       vbox.setContentsMargins(0, 0, 0, 0)
+
+
       self.welcome = QLabel("Welcome to Kaboom! (A better Shazam!)")
-      self.welcome.setAlignment(Qt.AlignCenter)
+      self.welcome.setAlignment(Qt.AlignCenter) # centering text
       self.info = QLabel("Please select an audio file of the song you want to look up:")
-      self.info.setContentsMargins(0, 0, 0, 0)
-      self.info.setAlignment(Qt.AlignCenter)
+      self.info.setContentsMargins(0, 0, 0, 0) # more margins
+      self.info.setAlignment(Qt.AlignCenter) # centering text
       self.album_cover = QLabel()
-      self.album_cover.setAlignment(Qt.AlignCenter)
+      self.album_cover.setAlignment(Qt.AlignCenter) # centering text
+
+      # putting a default image in place of the album cover
+      pix = QPixmap("static_images/kaboom.jpg")
+      pix = pix.scaled(300, 300,  Qt.KeepAspectRatio, Qt.SmoothTransformation)
+      self.album_cover.setPixmap(pix)
+
+      # empty label which updates when song is searched for
       self.results = QLabel("")
       self.results.setAlignment(Qt.AlignCenter)
+
+      # button creation and customization (size specifically)
       openFileButton = QPushButton("Open Audio File")
       openFileButton.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
       openFileButton.setMinimumSize(350, 30)
-     #   openFileButton.setMaximumSize(500, 50)
-      openFileButton.clicked.connect(self.buttonClicked)
+      openFileButton.clicked.connect(self.buttonClicked) # connects the button
+
+      # adding everthing into layout
       vbox.addWidget(self.welcome)
       vbox.addWidget(self.album_cover)
       vbox.addWidget(self.results)
@@ -65,13 +83,14 @@ class ShazamGUI(QWidget):
 
   @Slot()
   def buttonClicked(self):
+    # allows you to open your file manager and returns the path of that file (I formatted it only for audio files)
     file, _ = QFileDialog.getOpenFileName(self, "Open Audio File", "", "Audio Files (*.mp3 *.wav *.aac *.flac *.ogg)")
 
     if file:
         #   self.audioFilePath = file
         #   print(self.audioFilePath)
-          song = shazam.shazam(file)
-          print(song)
+          song = shazam.shazam(file) # runs the shazam api code
+
           if "error" in song:
             self.results.setText(song["error"])
           else:
@@ -86,11 +105,13 @@ class ShazamGUI(QWidget):
   def albumCoverImage(self, url):
     if not url or url == "No picture available":
         pix = QPixmap("static_images/404.jpeg")
-        pix = pix.scaled(300, 300,  Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        pix = pix.scaled(300, 300,  Qt.KeepAspectRatio, Qt.SmoothTransformation) # keeps aspect ration no matter the size change and ensures quality
         self.album_cover.setPixmap(pix)
         return
         
-    downloadImage = requests.get(url)
+    downloadImage = requests.get(url) # downloads image url
+    
+    # adds that image into the existing album cover label
     if downloadImage.ok:
         pix = QPixmap()
         pix.loadFromData(downloadImage.content)
