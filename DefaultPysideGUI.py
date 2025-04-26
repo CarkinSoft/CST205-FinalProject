@@ -2,7 +2,7 @@ import sys
 import shazam
 
 # import classes from PySide6.QtWidgets module
-from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QFileDialog
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QFileDialog, QSizePolicy
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Slot, Qt
 import requests
@@ -25,9 +25,8 @@ class ShazamGUI(QWidget):
          border-width: 2px;
          border-radius: 10px;
          border-color: beige;
-         font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-         font: bold 10px;
-         min-width: 10em;
+         font-family: 'Avenir', sans-serif;
+         font: 14px;
          padding: 6px;
         }
         QPushButton:hover {
@@ -39,19 +38,27 @@ class ShazamGUI(QWidget):
     """)
 
       vbox = QVBoxLayout()
+      vbox.setSpacing(5)
+      vbox.setContentsMargins(0, 0, 0, 0)
       self.welcome = QLabel("Welcome to Kaboom! (A better Shazam!)")
       self.welcome.setAlignment(Qt.AlignCenter)
       self.info = QLabel("Please select an audio file of the song you want to look up:")
+      self.info.setContentsMargins(0, 0, 0, 0)
+      self.info.setAlignment(Qt.AlignCenter)
       self.album_cover = QLabel()
       self.album_cover.setAlignment(Qt.AlignCenter)
       self.results = QLabel("")
+      self.results.setAlignment(Qt.AlignCenter)
       openFileButton = QPushButton("Open Audio File")
+      openFileButton.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+      openFileButton.setMinimumSize(350, 30)
+     #   openFileButton.setMaximumSize(500, 50)
       openFileButton.clicked.connect(self.buttonClicked)
       vbox.addWidget(self.welcome)
       vbox.addWidget(self.album_cover)
       vbox.addWidget(self.results)
       vbox.addWidget(self.info)
-      vbox.addWidget(openFileButton)
+      vbox.addWidget(openFileButton, alignment=Qt.AlignCenter)
       self.setLayout(vbox)
       self.show()
 
