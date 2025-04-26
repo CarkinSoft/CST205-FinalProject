@@ -96,12 +96,18 @@ class ShazamGUI(QWidget):
           else:
             self.albumCoverImage(song.get("cover_art"))
             self.results.setTextFormat(Qt.RichText) # allows for html
-            self.results.setText(
+            text = (
                 f"Song: {song['title']}<br>"
                 f"By {song['artist']}<br>"
                 f"Album: {song['album']}<br>"
-                f"Song Link: <a href='{song['song_link']}'>Click here</a>"
             )
+            # makes sure there is a link to be clicked
+            if song['song_link'] != 'No Spotify link available':
+                text += f"Song Link: <a href='{song['song_link']}'>Click here</a>"
+            else:
+                text += "No Spotify link available."
+            
+            self.results.setText(text)
             self.results.setOpenExternalLinks(True) # allows for links to be clickable
 
   def albumCoverImage(self, url):
