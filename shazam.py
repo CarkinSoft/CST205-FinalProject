@@ -20,6 +20,7 @@ def shazam(filepath):
     if response.status_code == 200:
         data = response.json()
         track = data.get('result', {})
+        # print(track)
 
         if not track:
             return {error: "No song Identified..."}
@@ -32,6 +33,7 @@ def shazam(filepath):
             "song_link" : track.get('spotify', {}).get('external_urls', {}).get('spotify', 'No Spotify link available')
         }
 
+       
         # Testing code for songs
         # print("Song information: ")
         # print(cover_art)
@@ -42,4 +44,4 @@ def shazam(filepath):
     # else:
     #     print("Error")
 
-# shazam('audio_files/monster.mp3')
+shazam('audio_files/monster.mp3')
