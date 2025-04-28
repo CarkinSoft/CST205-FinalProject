@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":bug: there was an issue with how i was calling main. Silly issue but its fixed now" />
+    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":bug: there was an issue with how i was calling main. Silly issue but its fixed now">
+      <change afterPath="$PROJECT_DIR$/.idea/CST205-FinalProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEST1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DefaultPysideGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DefaultPysideGUI.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,22 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.DefaultPysideGUI.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;CarsonDevBranch-Mk.I&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/carson/PycharmProjects/CST205-FinalProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.DefaultPysideGUI.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "CarsonDevBranch-Mk.I",
+    "last_opened_file_path": "/Users/carson/PycharmProjects/CST205-FinalProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -121,6 +128,9 @@
       <workItem from="1745447133131" duration="509000" />
       <workItem from="1745447982449" duration="1852000" />
       <workItem from="1745450358966" duration="998000" />
+      <workItem from="1745870093368" duration="708000" />
+      <workItem from="1745878153992" duration="1689000" />
+      <workItem from="1745879848419" duration="283000" />
     </task>
     <task id="LOCAL-00001" summary=":technologist: initial code commit">
       <option name="closed" value="true" />

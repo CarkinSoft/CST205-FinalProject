@@ -1,9 +1,50 @@
 import sys
 # import classes from PySide6.QtWidgets module
-from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox, QMainWindow, QStatusBar, QToolBar
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox, QMainWindow, QStatusBar, QToolBar, QPushButton, QFileDialog
 from PySide6.QtCore import Qt,Slot
 from PySide6.QtGui import QPixmap
 #from __feature__ import snake_case, true_property
+
+# create a QApplication object
+my_app = QApplication([])
+
+
+#-----------------------------------------------------------------------------------------------------------------------
+class EditorWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        vboxEditor = QVBoxLayout()
+
+        #labels
+        self.label1 = QLabel("Audio Editor")
+        self.label1.setAlignment(Qt.AlignCenter)
+        self.label1.setFixedHeight(100)
+        self.label1.setFixedWidth(100)
+
+        self.label2 = QLabel("<h1>Select an audio file to edit<h1>")
+        self.label2.setAlignment(Qt.AlignCenter)
+        self.label2.setFixedHeight(100)
+        self.label2.setFixedWidth(100)
+
+        self.label3 = QLabel("PLACEHOLDER")
+        self.label3.setAlignment(Qt.AlignCenter)
+        self.label3.setFixedHeight(100)
+        self.label3.setFixedWidth(100)
+
+
+        #buttons
+        self.openFileButton = QPushButton("Open Audio File")
+        self.openFileButton.clicked.connect(self.buttonClicked)
+
+        #adding widgets to vboxEditor
+        vboxEditor.addWidget(self.label1)
+        vboxEditor.addWidget(self.label2)
+        vboxEditor.addWidget(self.label3)
+        vboxEditor.addWidget(self.openFileButton)
+
+        #setting layout
+        self.setLayout(vboxEditor)
+        self.show()
 
 #Pulse Code Modulation (PCM) function
 import numpy as np
@@ -19,15 +60,20 @@ def create_pcm(frequency):
     y_vals = 32767 * .3 * np.sin(ang_freq * x_vals / SAMPLES_S)
     return np.int16(y_vals)
 
+    @Slot()
+    def buttonClicked(self):
+        file, _ = QFileDialog.getOpenFileName(self, "Open Audio File", "", "Audio Files (*.mp3 *.wav *.aac *.flac *.ogg)")
+
+        if file:
+            self.audioFilePath = file
+        print(self.audioFilePath)
+#-----------------------------------------------------------------------------------------------------------------------
 
 
-# create a QApplication object
-my_app = QApplication([])
 
-#class MainWindow(QMainWindow):
-    #def __init__(self):
-        #super().__init__()
 
+
+#-----------------------------------------------------------------------------------------------------------------------
 class MyWindow(QWidget):
   def __init__(self):
       super().__init__()
@@ -102,6 +148,7 @@ class MyWindow(QWidget):
   @Slot()
   def naviButtn5_clicked(self):
       self.label1.setText("Tool4")
+#-----------------------------------------------------------------------------------------------------------------------
 
 def __main__():
     # create a MyWindow object
