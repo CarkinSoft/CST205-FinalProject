@@ -11,7 +11,7 @@ import requests
 # create a QApplication object
 my_app = QApplication([])
 #  background-color: #1a1a1a;
-class ShazamGUI(QWidget):
+class KaboomGUI(QWidget):
   def __init__(self):
       super().__init__()
       self.setWindowTitle("Kaboom Song Lookup") # window title
@@ -130,7 +130,7 @@ class ShazamGUI(QWidget):
         self.album_cover.setText("Error loading image...")
 
 # create a MyWindow object
-my_win = ShazamGUI()
+my_win = KaboomGUI()
 
 # enter the Qt main loop and start to execute the Qt code
 sys.exit(my_app.exec())

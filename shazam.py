@@ -23,7 +23,7 @@ def shazam(filepath):
         # print(track)
 
         if not track:
-            return {error: "No song Identified..."}
+            return {"error": "No song Identified..."}
         
         return {
             "title" : track.get('title', 'No title available...'),
@@ -44,4 +44,4 @@ def shazam(filepath):
     # else:
     #     print("Error")
 
-shazam('audio_files/monster.mp3')
+# shazam('audio_files/monster.mp3')
