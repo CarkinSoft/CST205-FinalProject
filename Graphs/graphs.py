@@ -45,10 +45,10 @@ def dis_beatmarkers(y, sr, save_path):
 
     # Add vertical lines at beat times
     for bt in beat_times:
-        plt.axvline(x=bt, color='cyan', linestyle='--', alpha=0.8) # '-', '--', '-.', ':',
+        plt.axvline(x=bt, color='cyan', linestyle='--', alpha=0.8, linewidth=1) # '-', '--', '-.', ':',
 
     # Title and labels
-    plt.title('Beat Markers Only', fontsize=14, fontweight='bold')
+    plt.title('Beat Markers', fontsize=14, fontweight='bold')
     plt.xlabel('Time (seconds)')
     plt.ylabel('Amplitude')
     plt.tight_layout()

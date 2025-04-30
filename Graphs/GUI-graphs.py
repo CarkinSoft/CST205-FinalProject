@@ -2,8 +2,8 @@ import sys
 import os
 import graphs # graphs.py
 from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel, 
-							   QLineEdit, QComboBox, QPushButton)
-from PySide6.QtCore import Qt
+							   QLineEdit, QComboBox, QPushButton, QFileDialog)
+from PySide6.QtCore import Qt, Slot
 from PySide6.QtGui import QPixmap
 from PIL import Image, ImageQt
 from __feature__ import snake_case, true_property
@@ -20,10 +20,14 @@ class GraphWindow(QWidget):
 		self.resize(500, 300)
 		self.title = QLabel("Audio Graphs")
 
-		# File input
-		# File needs to be in the "/TestAudioFiles/" folder
-		self.filename = QLineEdit("Enter file name with extension (.mp3, .wav)")
-		main_layout.add_widget(self.filename)
+		# File selection
+		selectFileButton = QPushButton("Select Audio File")
+		selectFileButton.clicked.connect(self.buttonClicked)
+		# Empty label for selected file
+		self.file_path = QLabel("")
+		main_layout.add_widget(self.file_path)
+		main_layout.add_widget(selectFileButton)
+		
 
 		# Graph selection
 		self.cbox = QComboBox()
@@ -65,15 +69,20 @@ class GraphWindow(QWidget):
 		else:
 			self.desc_label.text = f"Description:"
 
+	# Select a file from file manager and returns the path of that file
+	@Slot()
+	def buttonClicked(self):
+		file, _ = QFileDialog.get_open_file_name(self, "Open Audio File", "", "Audio Files (*.mp3 *.wav *.aac *.flac *.ogg)")
+		if file:
+			self.file = file
+		# Display selected file name
+		file_name = os.path.basename(file)
+		self.file_path.text = f"Selected file: {file_name}"
+
 	# Generate graph	
 	def make_graph(self):
-		filename = self.filename.text
+		file_path = self.file
 		graph_type = self.cbox.current_text
-		# Create path to audio file folder
-		file_path = os.path.join("TestAudioFiles", filename)
-		if not os.path.exists(file_path):
-			print("File not found:", file_path)
-			return
 		
 		# Generate graph using graphs.py
 		try:
