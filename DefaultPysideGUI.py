@@ -114,6 +114,8 @@ class MyWindow(QWidget):
   def naviButtn2_clicked(self):
       self.label1.setText("Tool1")
 
+#WORKING TOOL SELECTION BUTTON
+#COPY THIS FOR THE OTHER TOOLS:
   @Slot()
   def naviButtn3_clicked(self):
       #Print statement for debugging
