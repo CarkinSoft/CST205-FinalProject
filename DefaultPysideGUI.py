@@ -1,33 +1,63 @@
 import sys
+import numpy as np
 # import classes from PySide6.QtWidgets module
-from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox, QMainWindow, QStatusBar, QToolBar
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QCheckBox, QMainWindow, QStatusBar, QToolBar, QPushButton, QFileDialog
 from PySide6.QtCore import Qt,Slot
 from PySide6.QtGui import QPixmap
 #from __feature__ import snake_case, true_property
 
-#Pulse Code Modulation (PCM) function
-import numpy as np
-
-#cd audio at 44,100 hz and 16 bits per sample
-SAMPLES_S = 44_100
-BITS_SAMPLE = 16
-
-def create_pcm(frequency):
-    ang_freq = 2*np.pi*frequency
-    x_vals = np.arange(SAMPLES_S)
-    #sine wave between -1 and 1, scaled by 32767 with .3 reduction
-    y_vals = 32767 * .3 * np.sin(ang_freq * x_vals / SAMPLES_S)
-    return np.int16(y_vals)
-
-
-
 # create a QApplication object
 my_app = QApplication([])
 
-#class MainWindow(QMainWindow):
-    #def __init__(self):
-        #super().__init__()
 
+#-----------------------------------------------------------------------------------------------------------------------
+class EditorWindow(QWidget):
+    def __init__(self):
+        super().__init__()
+        vboxEditor = QVBoxLayout()
+
+        #labels
+        self.label1 = QLabel("Audio Editor")
+        self.label1.setAlignment(Qt.AlignCenter)
+
+        self.label2 = QLabel("<h1>Select an audio file to edit<h1>")
+        self.label2.setAlignment(Qt.AlignCenter)
+
+        self.label3 = QLabel("PLACEHOLDER")
+        self.label3.setAlignment(Qt.AlignCenter)
+
+
+        #buttons
+        selectFileButton = QPushButton("Open Audio File")
+        selectFileButton.clicked.connect(self.openFileButton)
+
+        #adding widgets to vboxEditor
+        vboxEditor.addWidget(self.label1)
+        vboxEditor.addWidget(self.label2)
+        vboxEditor.addWidget(self.label3)
+        vboxEditor.addWidget(selectFileButton)
+        vboxEditor.addStretch()
+
+        #setting layout
+        self.setWindowTitle("Audio Editor")
+        self.setLayout(vboxEditor)
+        self.show()
+
+    @Slot()
+    def openFileButton(self):
+        file, _ = QFileDialog.getOpenFileName(self, "Open Audio File", "", "Audio Files (*.mp3 *.wav *.aac *.flac *.ogg)")
+
+        if file:
+            self.audioFilePath = file
+        print(self.audioFilePath)
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------
 class MyWindow(QWidget):
   def __init__(self):
       super().__init__()
@@ -36,43 +66,36 @@ class MyWindow(QWidget):
       #Labels
       self.label1 = QLabel("Main Menu")
       self.label1.setAlignment(Qt.AlignCenter)
-      self.label1.setFixedHeight(100)
-      self.label1.setFixedWidth(100)
 
       self.label2 = QLabel("<h1>Welcome to the Multimedia Tool Suite<h1>")
       self.label2.setAlignment(Qt.AlignCenter)
-      self.label2.setFixedHeight(100)
-      self.label2.setFixedWidth(100)
 
       #Buttons
       naviButtn1 = QPushButton("Home")
-      naviButtn1.setFixedHeight(50)
-      naviButtn1.setFixedWidth(100)
-      #naviButtn1.clicked.connect(self.naviButtn1_clicked)
+      naviButtn1.clicked.connect(self.naviButtn1_clicked)
 
       naviButtn2 = QPushButton("Tool1")
-      naviButtn2.setFixedHeight(50)
-      naviButtn2.setFixedWidth(100)
-      #naviButtn2.clicked.connect(self.naviButtn2_clicked)
+      naviButtn2.clicked.connect(self.naviButtn2_clicked)
 
       naviButtn3 = QPushButton("Tool2")
-      naviButtn3.setFixedHeight(50)
-      naviButtn3.setFixedWidth(100)
-      #naviButtn3.clicked.connect(self.naviButtn3_clicked)
+      naviButtn3.clicked.connect(self.naviButtn3_clicked)
 
       naviButtn4 = QPushButton("Tool3")
-      naviButtn4.setFixedHeight(50)
-      naviButtn4.setFixedWidth(100)
-      #naviButtn4.clicked.connect(self.naviButtn4_clicked)
+      naviButtn4.clicked.connect(self.naviButtn4_clicked)
 
       naviButtn5 = QPushButton("Tool4")
-      naviButtn5.setFixedHeight(50)
-      naviButtn5.setFixedWidth(100)
-      #naviButtn5.clicked.connect(self.naviButtn5_clicked)
+      naviButtn5.clicked.connect(self.naviButtn5_clicked)
 
       #Main Menu Widgets
-      vbox.addWidget(self.label1)
       vbox.addWidget(self.label2)
+      vbox.addWidget(self.label1)
+      vbox.addWidget(naviButtn1)
+      vbox.addWidget(naviButtn2)
+      vbox.addWidget(naviButtn3)
+      vbox.addWidget(naviButtn4)
+      vbox.addWidget(naviButtn5)
+      vbox.addStretch()
+      self.setWindowTitle("Multimedia Tool Suite")
       self.setLayout(vbox)
       self.show()
 
@@ -91,9 +114,16 @@ class MyWindow(QWidget):
   def naviButtn2_clicked(self):
       self.label1.setText("Tool1")
 
+#WORKING TOOL SELECTION BUTTON
+#COPY THIS FOR THE OTHER TOOLS:
   @Slot()
   def naviButtn3_clicked(self):
-      self.label1.setText("Tool2")
+      #Print statement for debugging
+      print("Tool2 button clicked")
+      self.label1.setText("Audio Editor Open")
+      self.newWindow = EditorWindow()
+      self.newWindow.show()
+
 
   @Slot()
   def naviButtn4_clicked(self):
@@ -102,6 +132,7 @@ class MyWindow(QWidget):
   @Slot()
   def naviButtn5_clicked(self):
       self.label1.setText("Tool4")
+#-----------------------------------------------------------------------------------------------------------------------
 
 def __main__():
     # create a MyWindow object

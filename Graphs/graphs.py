@@ -57,6 +57,8 @@ def dis_beatmarkers(y, sr, save_path):
 
 
 def dis_waveform(y, sr, save_path):
+    fig, ax = plt.subplots(facecolor='#1F1B24')
+    ax.set_facecolor('#2A2A2E')
     librosa.display.waveshow(y, sr=sr, color='cyan', alpha=0.8)
 
     # Title and labels
