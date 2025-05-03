@@ -14,7 +14,7 @@ plt.rcParams['ytick.color'] = '#FFFFFF'
 def dis_mfccs(y, sr, save_path):
     # Extract MFCCs
     mfccs = librosa.feature.mfcc(y=y, sr=sr)
-    librosa.display.specshow(mfccs, x_axis='time', cmap='magma') # cmap to change color
+    librosa.display.specshow(mfccs, x_axis='time', cmap='magma')
 
     # Title and labels
     plt.colorbar(format='%+2.0f dB')
@@ -101,8 +101,12 @@ def load_audio(file_path):
 # Takes arguments from GUI-graphs.py then genertes and saves a graph image png
 def make_graph(file_path, graph_type, output_folder="OutputGraphs"):
     y, sr, duration = load_audio(file_path)
-    # Create filename and path to store generated graph
-    output_path = os.path.join(output_folder, f"graph.png")
+
+    # Construct absolute path
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(base_dir, output_folder)
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, "graph.png")
 
     # Call selected graph function
     if graph_type == "MFCC":
@@ -118,22 +122,3 @@ def make_graph(file_path, graph_type, output_folder="OutputGraphs"):
     else:
         raise ValueError(f"Unsupported graph type: {graph_type}")
         
-
-#### Keep commented when using with GUI-graphs.py, will throw RuntimeError: 
-#### Please destroy the QApplication singleton before creating a new QApplication instance
-# def main():
-#     audio_file = 'TestAudioFiles/phub_and.mp3'
-#     y, sr, duration = load_audio(audio_file)
-
-#     # # Some file info
-#     # print(f"File: {audio_file}")
-#     # print(f"Sample rate: {sr} Hz")
-#     # print(f"Total samples: {len(y)}")
-#     # print(f"Duration: {duration:.2f} s")
-
-#     # Call functions here
-#     dis_mfccs(y, sr, audio_file)
-
-
-# if __name__ == '__main__':
-#     main()

@@ -1,13 +1,12 @@
 import sys
 import os
-# from Graphs import graphs 	# Use if this file is being run from DefaultPysideGUI.py
-import graphs 			# Use if running this file directly
+from Graphs import graphs 	# Use if this file is being run from DefaultPysideGUI.py
+# import graphs 			# Use if running this file directly
 from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel, 
-							   QLineEdit, QComboBox, QPushButton, QFileDialog)
+							    QComboBox, QPushButton, QFileDialog)
 from PySide6.QtCore import Qt, Slot
 from PySide6.QtGui import QPixmap
 from PIL import Image, ImageQt
-# from __feature__ import snake_case, true_property
 
 
 class GraphWindow(QWidget):
@@ -65,7 +64,6 @@ class GraphWindow(QWidget):
 	def update_desc(self, graph_type):
 		if graph_type in self.graph_desc:
 			graph_desc = self.graph_desc[graph_type]
-			# self.desc_label.text = f"Description: {graph_desc}"
 			self.desc_label.setText(f"Description: {graph_desc}")
 
 		else:
@@ -91,15 +89,17 @@ class GraphWindow(QWidget):
 			# Call graphing function
 			graphs.make_graph(file_path, graph_type)
 			# Display graph image as pixmap
-			graph_pixmap = QPixmap("OutputGraphs/graph.png")
+			base_dir = os.path.dirname(os.path.abspath(__file__))
+			img_path = os.path.join(base_dir, "OutputGraphs", "graph.png")
+			graph_pixmap = QPixmap(img_path)
 			self.graph_image.setPixmap(graph_pixmap)
 
 		except Exception as e:
 			print("Exception while loading image:", e)
 			self.desc_label.setText(f"Error generating graph")
-    
+
+# For running this file directly (not from DeafaultPysideGUI.py) 
 if __name__ == "__main__":
-	# Set up app, if run directly (not from DeafaultPysideGUI.py)
 	my_app = QApplication([])
 	my_win = GraphWindow()
 	my_win.show()

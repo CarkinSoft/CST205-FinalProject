@@ -6,6 +6,9 @@ from PySide6.QtCore import Qt,Slot
 from PySide6.QtGui import QPixmap
 #from __feature__ import snake_case, true_property
 
+# Import file for Graph Audio tool window
+from Graphs.GUI_graphs import GraphWindow
+
 # create a QApplication object
 my_app = QApplication([])
 
@@ -80,7 +83,7 @@ class MyWindow(QWidget):
       naviButtn3 = QPushButton("Tool2")
       naviButtn3.clicked.connect(self.naviButtn3_clicked)
 
-      naviButtn4 = QPushButton("Tool3")
+      naviButtn4 = QPushButton("Graph Audio")
       naviButtn4.clicked.connect(self.naviButtn4_clicked)
 
       naviButtn5 = QPushButton("Tool4")
@@ -127,7 +130,10 @@ class MyWindow(QWidget):
 
   @Slot()
   def naviButtn4_clicked(self):
-      self.label1.setText("Tool3")
+      print("Graph Audio button clicked")
+      self.label1.setText("Graph Audio Open")
+      self.newWindow = GraphWindow()
+      self.newWindow.show()
 
   @Slot()
   def naviButtn5_clicked(self):
