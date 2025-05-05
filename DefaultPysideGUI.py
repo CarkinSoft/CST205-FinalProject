@@ -9,8 +9,10 @@ from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushB
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Slot, Qt
 import requests
+import Note
 
 from Graphs.GUI_graphs import GraphWindow
+from Note import STTWindow
 
 #from __feature__ import snake_case, true_property
 
@@ -261,7 +263,11 @@ class MyWindow(QWidget):
 
   @Slot()
   def naviButtn5_clicked(self):
+      print("Tool4 button clicked")
       self.label1.setText("Tool4")
+      self.newWindow = STTWindow()
+      self.newWindow.show()
+
 #-----------------------------------------------------------------------------------------------------------------------
 
 def __main__():

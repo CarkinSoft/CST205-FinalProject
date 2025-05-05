@@ -84,7 +84,7 @@ def ransom_note(text):
 
 
 
-my_app = QApplication([])
+#my_app = QApplication([])
 
 class STTWindow(QWidget):
   def __init__(self):
@@ -111,6 +111,6 @@ class STTWindow(QWidget):
     temp = get_text_from_speech()
     ransom_note(temp)
 
-my_win = STTWindow()
-sys.exit(my_app.exec())
+#my_win = STTWindow()
+#sys.exit(my_app.exec())
 

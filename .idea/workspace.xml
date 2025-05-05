@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":memo: Added pop up window when you click tool 2">
+    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":memo: Added shea's app to the main menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DefaultPysideGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DefaultPysideGUI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +132,7 @@
       <workItem from="1745964215952" duration="71000" />
       <workItem from="1745964315612" duration="621000" />
       <workItem from="1746046149094" duration="4435000" />
-      <workItem from="1746485420562" duration="350000" />
+      <workItem from="1746485420562" duration="1069000" />
     </task>
     <task id="LOCAL-00001" summary=":technologist: initial code commit">
       <option name="closed" value="true" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745880201155</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":memo: Added shea's app to the main menu">
+      <option name="closed" value="true" />
+      <created>1746485804081</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746485804081</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,12 +233,13 @@
     <MESSAGE value=":sparkles: added some sample audio programs from class to a folder in the project" />
     <MESSAGE value=":bug: there was an issue with how i was calling main. Silly issue but its fixed now" />
     <MESSAGE value=":memo: Added pop up window when you click tool 2" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: Added pop up window when you click tool 2" />
+    <MESSAGE value=":memo: Added shea's app to the main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value=":memo: Added shea's app to the main menu" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CST205_FinalProject$multi_note_wave.coverage" NAME="multi_note_wave Coverage Results" MODIFIED="1745273178318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
     <SUITE FILE_PATH="coverage/CST205_FinalProject$sound.coverage" NAME="sound Coverage Results" MODIFIED="1745273181450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
     <SUITE FILE_PATH="coverage/CST205_FinalProject$Note.coverage" NAME="Note Coverage Results" MODIFIED="1745275577289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CST205_FinalProject$DefaultPysideGUI.coverage" NAME="DefaultPysideGUI Coverage Results" MODIFIED="1746051419359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$DefaultPysideGUI.coverage" NAME="DefaultPysideGUI Coverage Results" MODIFIED="1746486492270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
