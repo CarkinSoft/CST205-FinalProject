@@ -4,7 +4,7 @@
 
 import sys
 from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
-from PySide6.QtCore import Slot
+from PySide6.QtCore import Qt, Slot
 import speech_recognition as sr
 import pyttsx3 
 from PIL import Image
@@ -80,35 +80,37 @@ def ransom_note(text):
 
 
 # get_text_from_speech()
-ransom_note('test . test')
+# ransom_note('test')
 
 
 
-# my_app = QApplication([])
+my_app = QApplication([])
 
-# class STTWindow(QWidget):
-#   def __init__(self):
-#       super().__init__()
-#       vbox = QVBoxLayout()
-#       label1 = QLabel("Press the button and say something to generate a \"ransom note\"")
-#       label2 = QLabel("(You may need to say it a couple of times)")
-#       vbox.addWidget(label1)
-#       vbox.addWidget(label2)
-#       btn1 = QPushButton("Speak")
-#       btn1.clicked.connect(self.on_search)
-#       vbox.addWidget(btn1)
-#       self.setLayout(vbox)
-#       self.resize(500, 500)
-#       self.show()
+class STTWindow(QWidget):
+  def __init__(self):
+      super().__init__()
+      vbox = QVBoxLayout()
+      label1 = QLabel("Press the button and say something to generate a \"ransom note\"\n(You may need to say it a couple of times)")
+      label1.setAlignment(Qt.AlignmentFlag.AlignHCenter)
+    #   label2 = QLabel("(You may need to say it a couple of times)")
+      vbox.addWidget(label1)
+    #   vbox.addWidget(label2)
+      btn1 = QPushButton("Speak")
+      btn1.clicked.connect(self.on_search)
+      vbox.addWidget(btn1)
+      self.setLayout(vbox)
+      self.resize(700, 300)
+      self.show()
 
-#   def __str__(self):
-#       return "STTWindow"
-#   def __repr__(self):
-#       return "STTWindow"
-#   @Slot()
-#   def on_search(self):
-#     temp = get_text_from_speech()
+  def __str__(self):
+      return "STTWindow"
+  def __repr__(self):
+      return "STTWindow"
+  @Slot()
+  def on_search(self):
+    temp = get_text_from_speech()
+    ransom_note(temp)
 
-# my_win = STTWindow()
-# sys.exit(my_app.exec())
+my_win = STTWindow()
+sys.exit(my_app.exec())
 
