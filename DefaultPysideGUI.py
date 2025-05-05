@@ -9,6 +9,9 @@ from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushB
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Slot, Qt
 import requests
+
+from Graphs.GUI_graphs import GraphWindow
+
 #from __feature__ import snake_case, true_property
 
 # create a QApplication object
@@ -251,7 +254,10 @@ class MyWindow(QWidget):
 
   @Slot()
   def naviButtn4_clicked(self):
-      self.label1.setText("Tool3")
+      print("Graph Audio button clicked")
+      self.label1.setText("Graph Audio Open")
+      self.newWindow = GraphWindow()
+      self.newWindow.show()
 
   @Slot()
   def naviButtn5_clicked(self):
