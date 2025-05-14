@@ -173,7 +173,8 @@ class MyWindow(QWidget):
       #Main Menu Widgets
       vbox.addWidget(self.label2)
       vbox.addWidget(self.label1)
-      vbox.addWidget(naviButtn1)
+      #vbox.addWidget(naviButtn1)
+      #UNUSED
       vbox.addWidget(naviButtn2)
       vbox.addWidget(naviButtn3)
       vbox.addWidget(naviButtn4)
