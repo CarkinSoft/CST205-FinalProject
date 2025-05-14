@@ -1,0 +1,53 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"367b495e-8e0c-49eb-afe6-e4a1fd62db90\" name=\"Changes\" comment=\"TRYING TO GET MINE TO MERGE WITH MAIN\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;CarkinSoft&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/CarkinSoft/CST205-FinalProject.git&quot;,\n    &quot;accountId&quot;: &quot;255c6fc2-3129-46e9-8922-d6d460fd198f&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2whsE2o4KZHRGYWRUN9XawT3vnl\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Python.DefaultPysideGUI.executor&quot;: &quot;Run&quot;,\n    &quot;Python.MegaSoundwave.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;CarsonDevBranch-Mk.II&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-PY-251.23774.444\" />\n        <option value=\"bundled-python-sdk-890ed5b35930-d9c5bdb153f4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.23774.444\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"367b495e-8e0c-49eb-afe6-e4a1fd62db90\" name=\"Changes\" comment=\":memo: Added Jacob's app to the main menu\" />\n      <created>1746505025007</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1746505025007</updated>\n      <workItem from=\"1746505026312\" duration=\"1995000\" />\n      <workItem from=\"1746507242182\" duration=\"594000\" />\n      <workItem from=\"1746650959735\" duration=\"410000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"TRYING TO GET MINE TO MERGE WITH MAIN\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1747257039706</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1747257039706</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"TRYING TO GET MINE TO MERGE WITH MAIN\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1747257095318</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1747257095318</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"TRYING TO GET MINE TO MERGE WITH MAIN\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1747257194952</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1747257194952</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"TRYING TO GET MINE TO MERGE WITH MAIN\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1747257302504</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1747257302504</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"TRYING TO GET MINE TO MERGE WITH MAIN\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"TRYING TO GET MINE TO MERGE WITH MAIN\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\n          <url>file://$PROJECT_DIR$/DefaultPysideGUI.py</url>\n          <line>149</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$multi_note_wave.coverage\" NAME=\"multi_note_wave Coverage Results\" MODIFIED=\"1745273178318\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/SoundProgramExamples\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$sound.coverage\" NAME=\"sound Coverage Results\" MODIFIED=\"1745273181450\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/SoundProgramExamples\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$Note.coverage\" NAME=\"Note Coverage Results\" MODIFIED=\"1745275577289\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$MegaSoundwave.coverage\" NAME=\"MegaSoundwave Coverage Results\" MODIFIED=\"1747089144101\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/CST205_FinalProject$DefaultPysideGUI.coverage\" NAME=\"DefaultPysideGUI Coverage Results\" MODIFIED=\"1747256878143\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7a47f7631fa0e1d32db727013eeb0b1bb26d4e62)
++++ b/.idea/workspace.xml	(date 1747258047131)
+@@ -45,21 +45,20 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Python.DefaultPysideGUI.executor&quot;: &quot;Run&quot;,
+-    &quot;Python.MegaSoundwave.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;CarsonDevBranch-Mk.II&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Python.DefaultPysideGUI.executor": "Run",
++    "Python.MegaSoundwave.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -78,6 +77,7 @@
+       <workItem from="1746505026312" duration="1995000" />
+       <workItem from="1746507242182" duration="594000" />
+       <workItem from="1746650959735" duration="410000" />
++      <workItem from="1747257760049" duration="287000" />
+     </task>
+     <task id="LOCAL-00001" summary="TRYING TO GET MINE TO MERGE WITH MAIN">
+       <option name="closed" value="true" />

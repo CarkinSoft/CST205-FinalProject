@@ -9,6 +9,7 @@ from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushB
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Slot, Qt
 import requests
+import MegaSoundwave
 import Note
 
 from Graphs.GUI_graphs import GraphWindow
@@ -18,49 +19,6 @@ from Note import STTWindow
 
 # create a QApplication object
 my_app = QApplication([])
-
-
-#-----------------------------------------------------------------------------------------------------------------------
-
-class EditorWindow(QWidget):
-    def __init__(self):
-        super().__init__()
-        vboxEditor = QVBoxLayout()
-
-        #labels
-        self.label1 = QLabel("Audio Editor")
-        self.label1.setAlignment(Qt.AlignCenter)
-
-        self.label2 = QLabel("<h1>Select an audio file to edit<h1>")
-        self.label2.setAlignment(Qt.AlignCenter)
-
-        self.label3 = QLabel("PLACEHOLDER")
-        self.label3.setAlignment(Qt.AlignCenter)
-
-
-        #buttons
-        selectFileButton = QPushButton("Open Audio File")
-        selectFileButton.clicked.connect(self.openFileButton)
-
-        #adding widgets to vboxEditor
-        vboxEditor.addWidget(self.label1)
-        vboxEditor.addWidget(self.label2)
-        vboxEditor.addWidget(self.label3)
-        vboxEditor.addWidget(selectFileButton)
-        vboxEditor.addStretch()
-
-        #setting layout
-        self.setWindowTitle("Audio Editor")
-        self.setLayout(vboxEditor)
-        self.show()
-
-    @Slot()
-    def openFileButton(self):
-        file, _ = QFileDialog.getOpenFileName(self, "Open Audio File", "", "Audio Files (*.mp3 *.wav *.aac *.flac *.ogg)")
-
-        if file:
-            self.audioFilePath = file
-        print(self.audioFilePath)
 
 #-----------------------------------------------------------------------------------------------------------------------
 
@@ -200,16 +158,16 @@ class MyWindow(QWidget):
       naviButtn1 = QPushButton("Home")
       naviButtn1.clicked.connect(self.naviButtn1_clicked)
 
-      naviButtn2 = QPushButton("Tool1")
+      naviButtn2 = QPushButton("Kaboom Song Lookup")
       naviButtn2.clicked.connect(self.naviButtn2_clicked)
 
-      naviButtn3 = QPushButton("Tool2")
+      naviButtn3 = QPushButton("MegaSoundwave Audio Slicer")
       naviButtn3.clicked.connect(self.naviButtn3_clicked)
 
-      naviButtn4 = QPushButton("Tool3")
+      naviButtn4 = QPushButton("Audio Grapher")
       naviButtn4.clicked.connect(self.naviButtn4_clicked)
 
-      naviButtn5 = QPushButton("Tool4")
+      naviButtn5 = QPushButton("Ransom Note Generator")
       naviButtn5.clicked.connect(self.naviButtn5_clicked)
 
       #Main Menu Widgets
@@ -248,9 +206,9 @@ class MyWindow(QWidget):
   @Slot()
   def naviButtn3_clicked(self):
       #Print statement for debugging
-      print("Tool2 button clicked")
+      print("MegaSoundwave button clicked")
       self.label1.setText("Audio Editor Open")
-      self.newWindow = EditorWindow()
+      self.newWindow = MegaSoundwave.SoundWaveEditor()
       self.newWindow.show()
 
 
