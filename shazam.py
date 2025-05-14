@@ -6,7 +6,7 @@ def shazam(filepath):
 
     url = "https://api.audd.io/"
     data = {
-        "api_token": "78fe81024da2a73ae9e15648e1fee64c",  
+        "api_token": "ffea69dbbcb18963e2da59ad5e735461",  
         "return": "lyrics,apple_music,spotify",
         }
 
