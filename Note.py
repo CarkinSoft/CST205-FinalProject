@@ -1,7 +1,3 @@
-# pip install speechrecognition
-# pip install pyaudio
-# pip install pyttsx3
-
 import sys
 from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton
 from PySide6.QtCore import Qt, Slot
