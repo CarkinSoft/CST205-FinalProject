@@ -1,3 +1,13 @@
+# CST205
+# Title: Audio Tool Suite
+# Abstract: Audio Tool Suite which allows users to play with various audio functions such as generating graphs from audio, looking up songs,
+# slicing audio, or generating image from microphone.
+# Authors: Carson Cardoza, Shea Gallagher, Ruben Rivera, Jacob Zamora
+# shazam.py, KaboomGUI.py - Ruben Rivera
+# MegaSoundWave.py, DefaultPysideGUI.py - Carson Cardoza
+# graph_window.py - Shea Gallagher
+# Note.py - Jacob Zamora
+
 import sys
 import shazam
 import numpy as np
