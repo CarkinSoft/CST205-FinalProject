@@ -154,6 +154,8 @@ class MyWindow(QWidget):
       self.label2 = QLabel("<h1>Welcome to the Multimedia Tool Suite<h1>")
       self.label2.setAlignment(Qt.AlignCenter)
 
+
+
       #Buttons
       naviButtn1 = QPushButton("Home")
       naviButtn1.clicked.connect(self.naviButtn1_clicked)
@@ -223,7 +225,7 @@ class MyWindow(QWidget):
   @Slot()
   def naviButtn5_clicked(self):
       print("Tool4 button clicked")
-      self.label1.setText("Tool4")
+      self.label1.setText("Ransom Note Generator Open")
       self.newWindow = STTWindow()
       self.newWindow.show()
 

@@ -17,9 +17,10 @@ class SoundWaveEditor(QWidget):
         #widgets
         self.label1 = QLabel("No file loaded")
         self.label1.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.sliderLayout = QHBoxLayout()
-        self.trimmer1 = QSlider(Qt.Horizontal)
-        self.trimmer2 = QSlider(Qt.Horizontal)
+        self.trimmer1 = QSlider()
+        self.trimmer2 = QSlider()
+        self.label2 = QLabel("0.00s - 0.00s")
+
 
         #pixmaps
         self.coolpixmap = QPixmap("Cool-Images/skizzer.png")
@@ -37,7 +38,6 @@ class SoundWaveEditor(QWidget):
         self.coolpicture1.setFixedSize(100,100)
         self.coolpicture2_ElectricBoogaloo = QLabel()
         self.coolpicture2_ElectricBoogaloo.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
         self.coolpicture2_ElectricBoogaloo.setScaledContents(True)
         self.coolpicture2_ElectricBoogaloo.setFixedSize(100,100)
         self.coolpicture.setPixmap(self.coolpixmap)
@@ -45,30 +45,28 @@ class SoundWaveEditor(QWidget):
         self.coolpicture2_ElectricBoogaloo.setPixmap(self.coolpixmap2_TheSqueakuel)
 
         #sliders
-        self.trimmer1.setMinimum(0)
-        self.trimmer1.setMaximum(100)
-        self.trimmer1.setValue(0)
-        self.trimmer2.setMinimum(0)
-        self.trimmer2.setMaximum(100)
-        self.trimmer2.setValue(100)
+        self.audio = None
         self.trimmer1.valueChanged.connect(self.updateTrimmers)
         self.trimmer2.valueChanged.connect(self.updateTrimmers)
+        self.trimmer1.setValue(0)
+        self.trimmer2.setValue(1000)
 
         #buttons
         selectFileButton = QPushButton("Open Audio File")
         selectFileButton.clicked.connect(self.openFileButton)
+
         trimButton = QPushButton("Slice and Save")
         trimButton.clicked.connect(self.trimAudio)
 
         #adding widgets to vboxEditor
-        #vboxMegaSoundwave.addWidget(self.coolpicture2_ElectricBoogaloo)
+        self.coolpicture2_ElectricBoogaloo.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        vboxMegaSoundwave.addWidget(self.coolpicture2_ElectricBoogaloo)
         vboxMegaSoundwave.addWidget(self.label1)
         vboxMegaSoundwave.addWidget(selectFileButton)
-        vboxMegaSoundwave.addLayout(self.sliderLayout)
-        vboxMegaSoundwave.addWidget(trimButton)
+        vboxMegaSoundwave.addWidget(self.label2)
         vboxMegaSoundwave.addWidget(self.trimmer1)
         vboxMegaSoundwave.addWidget(self.trimmer2)
-        vboxMegaSoundwave.addStretch()
+        vboxMegaSoundwave.addWidget(trimButton)
 
         #setting layout
         self.setWindowTitle("Mega-Soundwave Audio Slicer")
@@ -80,14 +78,23 @@ class SoundWaveEditor(QWidget):
         self.trimmer2.setValue(self.trimmer2.value())
         if self.trimmer1.value() > self.trimmer2.value():
             self.trimmer1.setValue(self.trimmer2.value()-1)
+        self.label2.setText(f"{self.trimmer1.value()/100:.2f}s - {self.trimmer2.value()/100:.2f}s")
 
     @Slot()
     def openFileButton(self):
         file = QFileDialog.getOpenFileName(self, "Open Audio File", "", "Audio Files (*.mp3 *.wav *.aac *.flac *.ogg)")
-        if file[0]:  # Only proceed if a file is selected
-            self.audioFilePath = file[0]  # Extract the actual file path
+        if file[0]:  #only continue once a file is selected
+            self.audioFilePath = file[0]  #get the file path
             self.audio = AudioSegment.from_file(self.audioFilePath, format="mp3")
             self.label1.setText(self.audioFilePath)
+
+            self.trimmer1.setMinimum(0)
+            self.trimmer1.setMaximum((self.audio.duration_seconds * 1000) - 1)
+            self.trimmer2.setMinimum(self.trimmer1.value() + 1)
+            self.trimmer2.setMaximum(self.audio.duration_seconds * 1000)
+            self.trimmer1.setOrientation(Qt.Orientation.Horizontal)
+            self.trimmer2.setOrientation(Qt.Orientation.Horizontal)
+
         print(self.audioFilePath)
 
     @Slot()

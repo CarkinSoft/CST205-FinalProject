@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment=":memo: Added shea's app to the main menu">
+    <list default="true" id="367b495e-8e0c-49eb-afe6-e4a1fd62db90" name="Changes" comment="got rid of home button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DefaultPysideGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DefaultPysideGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs/OutputGraphs/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs/OutputGraphs/graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MegaSoundwave.py" beforeDir="false" afterPath="$PROJECT_DIR$/MegaSoundwave.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="CarsonDevBranch-Mk.II" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,9 +43,9 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2vVd528AMM6sekRqXnHP1karo8L" />
+  <component name="ProjectId" id="2whsE2o4KZHRGYWRUN9XawT3vnl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,53 +53,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.DefaultPysideGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MegaSoundwave.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/carson/PycharmProjects/CST205-FinalProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/SoundProgramExamples" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="DefaultPysideGUI" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="CST205-FinalProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DefaultPysideGUI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -107,139 +78,83 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1b0b848-4106-4cab-9c1f-3f9420dbdfdd" name="Changes" comment="" />
-      <created>1744233988498</created>
+      <changelist id="367b495e-8e0c-49eb-afe6-e4a1fd62db90" name="Changes" comment=":memo: Added Jacob's app to the main menu" />
+      <created>1746505025007</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1744233988498</updated>
-      <workItem from="1744233989574" duration="1974000" />
-      <workItem from="1744674735086" duration="645000" />
-      <workItem from="1744676936945" duration="2025000" />
-      <workItem from="1744839100912" duration="1441000" />
-      <workItem from="1744840575991" duration="2041000" />
-      <workItem from="1744842840078" duration="128000" />
-      <workItem from="1744843358583" duration="9000" />
-      <workItem from="1745447133131" duration="509000" />
-      <workItem from="1745447982449" duration="1852000" />
-      <workItem from="1745450358966" duration="998000" />
-      <workItem from="1745870093368" duration="708000" />
-      <workItem from="1745878153992" duration="1689000" />
-      <workItem from="1745879848419" duration="1778000" />
-      <workItem from="1745964155399" duration="30000" />
-      <workItem from="1745964215952" duration="71000" />
-      <workItem from="1745964315612" duration="621000" />
-      <workItem from="1746046149094" duration="4435000" />
-      <workItem from="1746485420562" duration="1069000" />
+      <updated>1746505025007</updated>
+      <workItem from="1746505026312" duration="1995000" />
+      <workItem from="1746507242182" duration="594000" />
+      <workItem from="1746650959735" duration="410000" />
+      <workItem from="1747260186547" duration="2560000" />
+      <workItem from="1747369385018" duration="5778000" />
     </task>
-    <task id="LOCAL-00001" summary=":technologist: initial code commit">
+    <task id="LOCAL-00001" summary="TRYING TO GET MINE TO MERGE WITH MAIN">
       <option name="closed" value="true" />
-      <created>1744234110955</created>
+      <created>1747257039706</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1744234110955</updated>
+      <updated>1747257039706</updated>
     </task>
-    <task id="LOCAL-00002" summary=":art: just adding something because the project is empty">
+    <task id="LOCAL-00002" summary="TRYING TO GET MINE TO MERGE WITH MAIN">
       <option name="closed" value="true" />
-      <created>1744234334532</created>
+      <created>1747257095318</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1744234334532</updated>
+      <updated>1747257095318</updated>
     </task>
-    <task id="LOCAL-00003" summary=":art: Added a blank gui to get everyone started.">
+    <task id="LOCAL-00003" summary="TRYING TO GET MINE TO MERGE WITH MAIN">
       <option name="closed" value="true" />
-      <created>1744684282375</created>
+      <created>1747257194952</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1744684282375</updated>
+      <updated>1747257194952</updated>
     </task>
-    <task id="LOCAL-00004" summary=":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well">
+    <task id="LOCAL-00004" summary="TRYING TO GET MINE TO MERGE WITH MAIN">
       <option name="closed" value="true" />
-      <created>1744840303620</created>
+      <created>1747257302504</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1744840303620</updated>
+      <updated>1747257302504</updated>
     </task>
-    <task id="LOCAL-00005" summary=":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well">
+    <task id="LOCAL-00005" summary="TRYING TO GET MINE TO MERGE WITH MAIN">
       <option name="closed" value="true" />
-      <created>1744840309381</created>
+      <created>1747258271880</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1744840309381</updated>
+      <updated>1747258271880</updated>
     </task>
-    <task id="LOCAL-00006" summary=":sparkles: Added two sample programs for experimenting with sound">
+    <task id="LOCAL-00006" summary="got rid of home button">
       <option name="closed" value="true" />
-      <created>1744841858171</created>
+      <created>1747258416348</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1744841858171</updated>
+      <updated>1747258416348</updated>
     </task>
-    <task id="LOCAL-00007" summary=":sparkles: added some sample audio programs from class to a folder in the project">
-      <option name="closed" value="true" />
-      <created>1744844250610</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1744844250610</updated>
-    </task>
-    <task id="LOCAL-00008" summary=":memo: Added pop up window when you click tool 2">
-      <option name="closed" value="true" />
-      <created>1745880201155</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1745880201155</updated>
-    </task>
-    <task id="LOCAL-00009" summary=":memo: Added shea's app to the main menu">
-      <option name="closed" value="true" />
-      <created>1746485804081</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1746485804081</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":technologist: initial code commit" />
-    <MESSAGE value=":art: just adding something because the project is empty" />
-    <MESSAGE value="Update README.md" />
-    <MESSAGE value=":art: Added a blank gui to get everyone started." />
-    <MESSAGE value=":memo: Deleted a duplicate branch and created a devbranch for myself, updating the README file in here as well" />
-    <MESSAGE value=":sparkles: Added two sample programs for experimenting with sound" />
-    <MESSAGE value=":sparkles: added some sample audio programs from class to a folder in the project" />
-    <MESSAGE value=":bug: there was an issue with how i was calling main. Silly issue but its fixed now" />
-    <MESSAGE value=":memo: Added pop up window when you click tool 2" />
-    <MESSAGE value=":memo: Added shea's app to the main menu" />
-    <option name="LAST_COMMIT_MESSAGE" value=":memo: Added shea's app to the main menu" />
+    <MESSAGE value="TRYING TO GET MINE TO MERGE WITH MAIN" />
+    <MESSAGE value="got rid of home button" />
+    <option name="LAST_COMMIT_MESSAGE" value="got rid of home button" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CST205_FinalProject$multi_note_wave.coverage" NAME="multi_note_wave Coverage Results" MODIFIED="1745273178318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
     <SUITE FILE_PATH="coverage/CST205_FinalProject$sound.coverage" NAME="sound Coverage Results" MODIFIED="1745273181450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SoundProgramExamples" />
     <SUITE FILE_PATH="coverage/CST205_FinalProject$Note.coverage" NAME="Note Coverage Results" MODIFIED="1745275577289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CST205_FinalProject$DefaultPysideGUI.coverage" NAME="DefaultPysideGUI Coverage Results" MODIFIED="1746486492270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$MegaSoundwave.coverage" NAME="MegaSoundwave Coverage Results" MODIFIED="1747374485900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CST205_FinalProject$DefaultPysideGUI.coverage" NAME="DefaultPysideGUI Coverage Results" MODIFIED="1747375112880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
